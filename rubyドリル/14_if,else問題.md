@@ -31,7 +31,7 @@ police_trouble(true, false) → False
 
 ```ruby
 def police_trouble(a, b)
-  if (a  && b) || (!a && !b)
+  if (a && b) || (!a && !b)
     puts "True"
   else
     puts "False"
@@ -42,4 +42,33 @@ end
 police_trouble(true, true)
 police_trouble(false, false)
 police_trouble(true, false)
+```
+
+## Java
+
+```java
+public class PoliceTrouble {
+// これは PoliceTrouble という名前のクラスを定義しています。
+// Javaではすべてのコードはクラスの中に書かれる必要があり、ここではクラス名を PoliceTrouble としています。
+    public static void policeTrouble(boolean a, boolean b) {
+    // ここで policeTrouble という名前のメソッドを定義しています。
+    // boolean a と boolean b という2つのブール値（true または false を取る型）の引数を受け取ります。
+    // public は「どこからでもアクセスできる」という意味で、static は「このメソッドはクラスに属し、オブジェクトを生成しなくても使える」ことを示しています。
+    // void は「このメソッドは値を返さない」という意味です。
+        if ((a && b) || (!a && !b)) {
+            System.out.println("True");
+        } else {
+            System.out.println("False");
+        }
+    }
+
+    public static void main(String[] args) {
+    // main メソッドはJavaプログラムの実行が始まる場所で、プログラムを実行するときに最初に呼び出されます。
+        // 呼び出し例
+        policeTrouble(true, true);    // True
+        policeTrouble(false, false);  // True
+        policeTrouble(true, false);   // False
+    }
+}
+
 ```
